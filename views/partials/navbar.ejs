@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">The Flexatorium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <% if(currentPage == "Today's Workouts"){ %>
+        <li class="nav-item active">
+      <% } else { %>
+        <li class="nav-item">
+      <% } %>
+        <a class="nav-link" href="/">Today's Workouts<span class="sr-only">(current)</span></a>
+      </li>
+
+      <% if(currentPage == "Workouts"){ %>
+        <li class="nav-item dropdown active">
+      <% } else { %>
+        <li class="nav-item dropdown">
+      <% } %>
+        <a class="nav-link dropdown-toggle" href="/exercises" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Workouts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/workouts">Search</a>
+          <a class="dropdown-item" href="/workouts">Edit</a>
+          <a class="dropdown-item" href="/workouts">Create</a>
+        </div>
+      </li>
+
+
+      <% if(currentPage == "Exercises"){ %>
+        <li class="nav-item dropdown active">
+      <% } else { %>
+        <li class="nav-item dropdown">
+      <% } %>
+        <a class="nav-link dropdown-toggle" href="/exercises" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exercises
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/exercises">Search</a>
+          <a class="dropdown-item" href="/exercises">Edit</a>
+          <a class="dropdown-item" href="/exercises">Create</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav> <!-- End of Navbar-->

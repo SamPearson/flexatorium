@@ -1,0 +1,141 @@
+
+<%- include('partials/headtag.ejs') %>
+
+<body>
+  <%- include('partials/navbar', {currentPage : "Exercises"}) %>
+
+  <div class="container main_content">
+
+    <div class="exercise_card">
+      <h3>Push Ups (BW)</h3>
+
+      <p>When automating creation of these, remember to add a unique identifier to the class names that manage expanding/collapsing integrations, records, and tags!</p>
+
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIntegrations" aria-expanded="false" aria-controls="collapseIntegrations">
+        Integrations
+      </button>
+      <div class="collapse" id="collapseIntegrations">
+        <div class="card card-body">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Type 1 Workouts
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="flex-container" style="display: flex">
+                    <div class="exercise_configuration_card">
+                      <p>Max Reps in 20 Minutes - No Modifiers</p>
+                      <p>No Modifiers</p>
+                      <p>Tags:</p>
+                      <p>Max Reps</p>
+                      <p>Another Tag</p>
+                    </div>
+                    <div class="exercise_configuration_card">
+                      <p>EMOM - 15 Reps - Lean to Bar</p>
+                      <p>Tags:</p>
+                      <p>EMOM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Type 2 Workouts
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="flex-container" style="display: flex">
+                    <div class="exercise_configuration_card">
+                      <p>10 Reps</p>
+                      <p>From the Knee</p>
+                      <p>Tags:</p>
+                      <p>idk</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Type 3 Workouts
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="flex-container" style="display: flex">
+                    <div class="exercise_configuration_card">
+                      <p>5 Reps</p>
+                      <p>From the Knee</p>
+                      <p>Tags:</p>
+                      <p>idk</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRecords" aria-expanded="false" aria-controls="collapseRecords">
+        Records
+      </button>
+      <div class="collapse" id="collapseRecords">
+        <div class="card card-body">
+          One time I did a whole bunch of push ups. It was sick.
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTags" aria-expanded="false" aria-controls="collapseTags">
+        Tags
+      </button>
+      <div class="collapse" id="collapseTags">
+        <div class="card card-body">
+          Here are some tags: [tag]. [tag]. [tag].
+        </div>
+      </div>
+
+    </div>
+
+    <div class="exercise_card">
+      <h2>Llups (BW)</h2>
+      <p>another one just like above!</p>
+    </div>
+
+    <div class="exercise_card">
+      <h2>Deadlift (WL)</h2>
+      <p>another one just like above!</p>
+    </div>
+
+    <div class="exercise_card">
+      <h2>Jump Rope (C)</h2>
+      <p>another one just like above!</p>
+    </div>
+
+
+
+  </div>
+
+
+
+  <%- include('partials/bootstrapjsincludes.ejs') %>
+
+</body>
+</html>

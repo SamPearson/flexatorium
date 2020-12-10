@@ -1,0 +1,58 @@
+
+body, html {
+  height: 100%;
+}
+
+.main_content {
+
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 20px;
+
+  background-color: steelblue;
+  border-left: 2px solid darkslategray;
+  border-right: 2px solid darkslategray;
+  border-bottom: 2px solid darkslategray;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.workout_card {
+  padding: 5px;
+  margin: 0 auto;
+
+  background-color: whitesmoke;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+
+}
+
+.exercise_card_container{
+  display: inline-flex;
+
+}
+.exercise_card {
+  margin: 10px;
+  padding: 5px;
+
+  background-color: gainsboro;
+
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.exercise_configuration_card{
+  margin: 10px;
+  padding: 5px;
+
+  background-color: gainsboro;
+
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid black;
+  border-radius: 5px;
+}

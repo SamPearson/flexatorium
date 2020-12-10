@@ -1,0 +1,68 @@
+
+<%- include('partials/headtag.ejs') %>
+
+<body>
+  <%- include('partials/navbar', {currentPage : "Today's Workouts"}) %>
+
+  <div class="container main_content">
+
+    <div class="workout_card">
+      <h2>THE HARBRINGER</h2> <%# Name %>
+      <h3>Scored by: Max Rounds in 20 minutes</h3> <%# Scoring Method %>
+
+      <hr>
+
+      <div class="exercise_card_container">
+
+        <div class="exercise_card">
+          <h3>Push Ups (BW)</h3>
+          <p>5 reps - From Knee</p>
+        </div>
+
+        <div class="exercise_card">
+          <h2>Barbell Row</h2>
+          <p>5 Reps @ 75</p>
+        </div>
+
+        <div class="exercise_card">
+          <h2>Jump Rope</h2>
+          <p>10 Reps</p>
+        </div>
+
+      </div>
+
+      <hr>
+
+
+      <h4>Notes</h4>
+      <p>I do best on this one when I take a 45 second splash break every 3 rounds. Timing this can be difficult if you're trying to time rounds as well.</p>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRecords" aria-expanded="false" aria-controls="collapseRecords">
+        Records
+      </button>
+      <div class="collapse" id="collapseRecords">
+        <div class="card card-body">
+          17 Rounds
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTags" aria-expanded="false" aria-controls="collapseTags">
+        Tags
+      </button>
+      <div class="collapse" id="collapseTags">
+        <div class="card card-body">
+          Here are some tags: [tag]. [tag]. [tag].
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <%- include('partials/bootstrapjsincludes.ejs') %>
+
+</body>
+</html>
